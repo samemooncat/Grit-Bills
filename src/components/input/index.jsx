@@ -1,14 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Input as InputComponent } from 'semantic-ui-react'
 
-const Input = (props) => {
+const Input = ({placeholder,size,type}) => {
     return(
-    	<div>Input</div>
+    	<div>
+            <InputComponent type={type} placeholder={placeholder} size={size}/>
+        </div>
     );
 };
 
 Input.propTypes = {
-    props: PropTypes.object.isRequired
+    placeholder: PropTypes.string.isRequired,
+    size: PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
 };
 
 export default Input;
