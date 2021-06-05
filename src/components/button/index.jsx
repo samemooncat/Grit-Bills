@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledButton } from './styles';
 
-const Button = ({ size, label, width, icon, red, blue, yellow }) => {
+const Button = ({ size, label, width, icon, red, blue, yellow, type }) => {
   return (
     <StyledButton
       fluid
@@ -12,6 +12,7 @@ const Button = ({ size, label, width, icon, red, blue, yellow }) => {
       size={size}
       width={width}
       icon={icon}
+      type={type}
     >
       {label}
     </StyledButton>
@@ -24,6 +25,7 @@ Button.defaultProps = {
   red: true,
   blue: false,
   yellow: false,
+  type: 'submit',
 };
 
 Button.propTypes = {
@@ -33,6 +35,7 @@ Button.propTypes = {
   red: PropTypes.bool,
   blue: PropTypes.bool,
   yellow: PropTypes.bool,
+  type: PropTypes.string,
 };
 
 export default Button;
