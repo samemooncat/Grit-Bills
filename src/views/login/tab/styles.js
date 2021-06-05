@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const StyledTab = styled(Tab)`
   .ui.segment {
     background: transparent;
+    padding-left: 0;
   }
 
   .ui.secondary.pointing.menu .item {
@@ -14,6 +15,7 @@ export const StyledTab = styled(Tab)`
     padding-bottom: 10px;
     margin-right: 20px;
     color: ${(props) => props.theme.lightGrey};
+    font-size: 17px;
   }
 
   .ui.secondary.pointing.menu .item:hover {

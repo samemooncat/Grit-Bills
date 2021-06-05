@@ -2,10 +2,11 @@ import React from 'react';
 import { StyledTab } from './styles';
 import SignIn from '../signin';
 import SignUp from '../signup';
+import ForgotPassword from '../forgotPassword';
 
 const panes = [
   {
-    menuItem: 'Sign In',
+    menuItem: 'Sign in',
     render: () => (
       <StyledTab.Pane attached={false}>
         <SignIn />
@@ -13,10 +14,18 @@ const panes = [
     ),
   },
   {
-    menuItem: 'Sign Up',
+    menuItem: 'Sign up',
     render: () => (
       <StyledTab.Pane attached={false}>
         <SignUp />
+      </StyledTab.Pane>
+    ),
+  },
+  {
+    menuItem: 'Forgot password?',
+    render: () => (
+      <StyledTab.Pane attached={false}>
+        <ForgotPassword />
       </StyledTab.Pane>
     ),
   },

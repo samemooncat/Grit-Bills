@@ -24,7 +24,7 @@ Input.defaultProps = {
   value: '',
   size: 'large',
   type: 'text',
-  width: 235,
+  width: '235px',
 };
 
 Input.propTypes = {
@@ -33,7 +33,7 @@ Input.propTypes = {
   value: PropTypes.string,
   size: PropTypes.string,
   type: PropTypes.string,
-  width: PropTypes.number,
+  width: PropTypes.string,
 };
 
 export default Input;
