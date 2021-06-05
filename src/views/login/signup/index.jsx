@@ -4,14 +4,22 @@ import Input from '../../../components/input/index';
 
 const SignUp = () => {
   return (
-    <>
-      <Input name="email" title="Email" type="email" size="big" width="100%" />
+    <form onSubmit={() => {}}>
+      <Input
+        name="email"
+        title="Email"
+        type="email"
+        size="big"
+        width="100%"
+        autoComplete="on"
+      />
       <Input
         name="password"
         title="Password"
         type="password"
         size="big"
         width="100%"
+        autoComplete="off"
       />
       <Input
         name="repeatPassword"
@@ -19,9 +27,10 @@ const SignUp = () => {
         type="password"
         size="big"
         width="100%"
+        autoComplete="off"
       />
       <Button size="large" color="orange" label="Sign up" />
-    </>
+    </form>
   );
 };
 

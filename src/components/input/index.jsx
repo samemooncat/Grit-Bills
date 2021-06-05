@@ -2,7 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledInput, StyledInputContainer } from './styles';
 
-const Input = ({ placeholder, size, type, title, name, value, width }) => {
+const Input = ({
+  placeholder,
+  size,
+  type,
+  title,
+  name,
+  value,
+  width,
+  autoComplete,
+}) => {
   return (
     <StyledInputContainer>
       <label htmlFor={name}>{title}</label>
@@ -13,6 +22,7 @@ const Input = ({ placeholder, size, type, title, name, value, width }) => {
         placeholder={placeholder}
         size={size}
         width={width}
+        autoComplete={autoComplete}
       />
     </StyledInputContainer>
   );
@@ -25,6 +35,7 @@ Input.defaultProps = {
   size: 'large',
   type: 'text',
   width: '235px',
+  autoComplete: 'off',
 };
 
 Input.propTypes = {
@@ -34,6 +45,7 @@ Input.propTypes = {
   size: PropTypes.string,
   type: PropTypes.string,
   width: PropTypes.string,
+  autoComplete: PropTypes.string,
 };
 
 export default Input;

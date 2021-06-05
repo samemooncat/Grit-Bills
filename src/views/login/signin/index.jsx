@@ -4,8 +4,15 @@ import Input from '../../../components/input/index';
 
 const SignIn = () => {
   return (
-    <>
-      <Input name="email" title="Email" type="email" size="big" width="100%" />
+    <form onSubmit={() => {}}>
+      <Input
+        name="email"
+        title="Email"
+        type="email"
+        size="big"
+        width="100%"
+        autoComplete="on"
+      />
       <Input
         name="password"
         title="Password"
@@ -13,8 +20,8 @@ const SignIn = () => {
         size="big"
         width="100%"
       />
-      <Button size="large" color="orange" label="Sign in" />
-    </>
+      <Button size="large" color="orange" label="Sign in" autoComplete="off" />
+    </form>
   );
 };
 
