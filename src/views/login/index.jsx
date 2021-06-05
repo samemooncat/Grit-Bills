@@ -1,32 +1,16 @@
-import React, { useState } from "react";
-import Button from "../../components/button/index";
-import Input from "../../components/input/index";
-import { StyledBody, StyledContainer, StyledFormContainer, StyledImageContainer } from "./style";
+import React from "react";
+import { StyledContainer, StyledFormContainer, StyledTitle } from './styles';
+import Tab from './tab';
 
-
-const SignIn = (props) => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    return (
-        <div className="container-signin__form">
-            <Input value={email} type="text" placeholder="Email" size="large" />
-            <Input value={password} type="password" placeholder="Password" size="large" />
-            <Button size="large" color="orange" label="Sign In" />
-        </div>
-    )
-}
-
-const Login = (props) => {
+const Login = () => {
 
     return (
-        <StyledBody>
-            <StyledContainer>
-                <StyledImageContainer />
-                <StyledFormContainer>
-                    <SignIn />
-                </StyledFormContainer>
-            </StyledContainer>
-        </StyledBody>
+        <StyledContainer>
+            <StyledFormContainer>
+                <StyledTitle>Welcome!</StyledTitle>
+                <Tab />
+            </StyledFormContainer>
+        </StyledContainer>
     );
 };
 
