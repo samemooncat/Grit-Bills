@@ -49,8 +49,9 @@ const SignIn = () => {
         size="big"
         width="100%"
         error={formik?.errors?.password}
+        autoComplete="off"
       />
-      <Button size="large" color="orange" label="Sign in" autoComplete="off" />
+      <Button size="large" color="orange" label="Sign in" />
     </form>
   );
 };
