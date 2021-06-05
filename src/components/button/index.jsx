@@ -6,9 +6,9 @@ const Button = ({ size, label, width, icon, red, blue, yellow }) => {
   return (
     <StyledButton
       fluid
-      red={red}
-      blue={blue}
-      yellow={yellow}
+      red={String(red)}
+      blue={String(blue)}
+      yellow={String(yellow)}
       size={size}
       width={width}
       icon={icon}
