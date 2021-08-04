@@ -1,11 +1,15 @@
-import React from 'react';
-import ContentWrapper from './contentWrapper';
+import React from "react";
+import ContentWrapper from "./contentWrapper";
+import Sidenav from "../../components/sidenav";
+
+import { StyledContainer } from "./styles";
 
 const Dashboard = () => {
   return (
-    <div>
+    <StyledContainer>
+      <Sidenav />
       <ContentWrapper />
-    </div>
+    </StyledContainer>
   );
 };
 
