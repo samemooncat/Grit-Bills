@@ -1,14 +1,39 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
+import {
+  StyledContainer,
+  StyledHeader,
+  StyledIcon,
+  StyledTitle,
+} from "./styles";
 
-const Card = (props) => {
-    return(
-    	<div>Card</div>
-    );
+const Card = ({ children, blue, yellow, red }) => {
+  return (
+    <StyledContainer>
+      <StyledHeader>
+        <StyledIcon></StyledIcon>
+        <StyledTitle></StyledTitle>
+      </StyledHeader>
+      {children}
+      {true && (
+        <div style={{}}>
+          <p>here I/dwadaw</p>
+        </div>
+      )}
+    </StyledContainer>
+  );
+};
+
+Card.defaultProps = {
+  blue: true,
+  yellow: false,
+  red: false,
 };
 
 Card.propTypes = {
-    props: PropTypes.object.isRequired
+  blue: PropTypes.bool,
+  yellow: PropTypes.bool,
+  red: PropTypes.bool,
 };
 
 export default Card;

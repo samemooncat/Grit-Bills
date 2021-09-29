@@ -1,8 +1,13 @@
-import React from 'react';
+import React from "react";
+import Card from "../../../components/card";
+import { StyledContainer } from "./styles";
 
 const Home = () => {
-  return(
-  	<div>Home</div>
+  return (
+    <StyledContainer>
+      <Card />
+      <Card />
+    </StyledContainer>
   );
 };
 export default Home;

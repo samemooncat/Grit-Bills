@@ -7,6 +7,7 @@ export const StyledContainer = styled.div`
   background-image: url(${background});
   min-height: 100vh;
   background-size: 100% 100%;
+  border: 1px solid green;
   @media (max-width: 768px) {
     background-image: url(${backgroundMobile});
   }
